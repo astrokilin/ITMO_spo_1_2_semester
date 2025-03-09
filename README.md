@@ -1,6 +1,7 @@
-# Zmich (Жмых)
 
-Простой логический интерпритатор
+# Compiller
+
+Простой компилятор
 
 
 ## Installation
@@ -14,4 +15,3 @@ Linux
 ## How to use
 
 cat your_file | ./compiller -a ast_dump_file_location -i ir_dump_file_location
-
