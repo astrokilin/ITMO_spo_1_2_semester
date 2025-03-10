@@ -577,10 +577,8 @@ inline static default_retcode
 cfg_nodes_builder_add_node(
         struct cfg_nodes_builder *const self,
         const size_t pool_size,
-#ifdef DEBUG
         int line,
         int column,
-#endif
         size_t child_1_ind,
         size_t child_2_ind)
 {
@@ -592,10 +590,9 @@ cfg_nodes_builder_add_node(
     p = (struct cfg_node*)(self->nodes_pool.start + pool_size);
     self->nodes_pool.size += sizeof(struct cfg_node);
 
-#ifdef DEBUG
     p->line = line;
     p->column = column;
-#endif
+
     p->child_1 = child_1_ind;
     p->child_2 = child_2_ind;
     return SUCCESS;

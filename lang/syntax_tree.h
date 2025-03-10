@@ -285,12 +285,8 @@ syntax_tree_get_num_big(const struct syntax_tree *const self, const size_t ind)
 }
 
 
-#ifdef DEBUG
-
 default_retcode
 syntax_tree_dump_dotfile(const struct syntax_tree*, FILE*);
-
-#endif
 
 
 struct __ast_builder_hash_entry

@@ -16,9 +16,9 @@ int main(int argc, char **argv)
     struct syntax_tree AST;
     struct ir IR;
     char should_print_ast = 0;
-    char *ast_dump_file_path;
+    char *ast_dump_file_path = 0;
     char should_print_ir = 0;
-    char *ir_dump_file_path;
+    char *ir_dump_file_path = 0;
     int opt;
 
     while ((opt = getopt (argc, argv, "a:i:")) != -1)
